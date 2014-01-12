@@ -22,17 +22,13 @@ var BinarySearchTree = function (root_val) {
 			else { 
 
 				return node;
-
 			}
-
 
 		}
 
 		var start = startNode || root;
 
 		return searcher(start);
-
-
 
 	}
 
@@ -54,9 +50,7 @@ var BinarySearchTree = function (root_val) {
 			else { 
 
 				return node;
-
 			}
-
 
 		}
 
@@ -65,8 +59,6 @@ var BinarySearchTree = function (root_val) {
 		return searcher(start);
 
 	}
-
-
 
 	this.getCount = function() {
 
@@ -96,7 +88,6 @@ var BinarySearchTree = function (root_val) {
 		doTraversal(root, function(val) {
 
 			sorted_list.push(val);
-
 
 		});
 
@@ -131,14 +122,12 @@ var BinarySearchTree = function (root_val) {
 
 				node.setLeft(newNode);
 
-				
 			}
 
 			else if (val > node.val) {
 
 				node.setRight(newNode);
 
-				
 			}
 
 		}
@@ -146,9 +135,7 @@ var BinarySearchTree = function (root_val) {
 		findSlot(root);
 
 		return true;
-
 	}
-
 
 	// Remove node from tree.
 	// Todo: implementing lazy removal, which does not remove nodes, just marks them 'disabled' or something.
@@ -193,7 +180,6 @@ var BinarySearchTree = function (root_val) {
 				}
 
 				else {
-
 					// Has one kid. We must update the pointer from parent node to the kid, skipping the node that is to be removed. 
 					// Garbage collection takes care of actual removal.
 
@@ -202,7 +188,6 @@ var BinarySearchTree = function (root_val) {
 					node.val > oldNode.val ? oldNode.setRight(kid) : oldNode.setLeft(kid);
 
 				}
-
 
 			}
 
@@ -234,7 +219,6 @@ var BinarySearchTree = function (root_val) {
 
 		return true;
 
-
 	}
 
 	// Find min node in the tree.
@@ -245,13 +229,11 @@ var BinarySearchTree = function (root_val) {
 
 		return findMin().val;
 
-
 	}
 
 	this.findMaxValue = function() {
 
 		return findMax().val;
-
 
 	}
 
@@ -306,7 +288,6 @@ var BinarySearchTree = function (root_val) {
 
 			}
 
-			
 		};
 
 		return added;
@@ -347,11 +328,9 @@ var BinarySearchTree = function (root_val) {
 
 				}
 
-
 			}
 
 			goRandom(next, direction);
-
 
 		}
 
@@ -360,7 +339,6 @@ var BinarySearchTree = function (root_val) {
 		return steps;
 	}
 	
-
 }
 
 // Node constructor
@@ -387,13 +365,11 @@ var BSTNode = function(val) {
 
 		this.right = node || null;
 
-
 	}
 
 	this.setLeft = function(node) {
 
 		this.left = node || null;
-
 
 	}
 
@@ -401,7 +377,5 @@ var BSTNode = function(val) {
 
 		return this.left !== null || this.right !== null;
 	}
-
-
 
 }
