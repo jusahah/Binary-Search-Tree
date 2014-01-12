@@ -5,6 +5,7 @@ JS implementation of Binary search tree. Only integers supported.
 
 
 Quick Guide:
+`````javascript
 
 	// New instance of the BST. Constructor takes single arg which is the value of the root node.
 	var BST = new BinarySearchTree(0);
@@ -36,3 +37,5 @@ Quick Guide:
 
 	// Returns number of nodes in the tree
 	console.log(BST.getCount());	
+
+`````
