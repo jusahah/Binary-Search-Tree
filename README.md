@@ -13,7 +13,7 @@ Quick Guide:
 	// Build random tree with 40 nodes. No return value.
 	BST.buildRandomTree(40);
 
-	// Random route through the tree
+	// Random route through the tree. Returns array of steps.
 	console.log(BST.randomRoute());
 
 	//Traverse tree. Returns sorted array of tree's nodes
