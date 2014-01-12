@@ -6,8 +6,7 @@ JS implementation of Binary search tree. Only integers supported.
 
 Quick Guide:
 
-	// New instance of the BST. 
-	// Constructor takes single argument which is the value of the root node.
+	// New instance of the BST. Constructor takes single arg which is the value of the root node.
 	var BST = new BinarySearchTree(0);
 
 	// Build random tree with 40 nodes. No return value.
