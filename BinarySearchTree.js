@@ -1,10 +1,12 @@
 var BinarySearchTree = function (root_val) {
 
 	// Binary search tree is colleciton of linked lists. Every search / traversal starts at root node.
+	
+	// Private variable for holding link to the root node.
 
 	var root = new BSTNode(root_val);
 
-	// How many nodes the tree has.
+	// How many nodes the tree has. Private /internal method
 
 	var findMin = function(startNode) {
 
@@ -32,7 +34,7 @@ var BinarySearchTree = function (root_val) {
 
 	}
 
-	// Find max node in the tree.
+	// Find max node in the tree. Private / internal method
 
 	var findMax = function(startNode) {
 
@@ -59,7 +61,13 @@ var BinarySearchTree = function (root_val) {
 		return searcher(start);
 
 	}
-
+	
+	//
+	
+	// Start of public interface
+	
+	//
+	
 	this.getCount = function() {
 
 		return this.traverse().length;
